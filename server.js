@@ -3,10 +3,15 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const dotenv = require("dotenv");
+const { bgCyan } = require("colors");
 require("colors");
+const connectDB = require("./config/config");
 
 // dotenv config
 dotenv.config();
+
+// db config
+connectDB();
 
 // rest object
 const app = express();
