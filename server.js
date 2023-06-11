@@ -11,7 +11,7 @@ const connectDB = require("./config/config");
 dotenv.config();
 
 // db config
-connectDB();
+connectDB(process.env.MONGO_URL);
 
 // rest object
 const app = express();
