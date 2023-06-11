@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const itemSchema = mongoose.Scema(
+const itemSchema = mongoose.Schema(
   {
     name: {
       type: String,
@@ -10,7 +10,7 @@ const itemSchema = mongoose.Scema(
       type: Number,
       required: true,
     }, 
-    categorry: {
+    category: {
       type: String,
       required: true,
     },
